@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תיבת תלונות אנונימיות</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ברוכים הבאים לתיבת התלונות האנונימית</h1>
+        <p class="description">
+            כאן תוכלו לשלוח תלונות באופן אנונימי לחלוטין.
+            <br>
+            כל תלונה נשמרת בצורה מאובטחת, בלי פרטים מזהים, ומועברת ישירות לפיקוד.
+        </p>
+        <div class="card">
+            <a href="complaint.html" class="button primary">שליחת תלונה חדשה</a>
+        </div>
+        <div class="card">
+            <h2>כניסת מפקדים</h2>
+            <form action="/admin" method="GET">
+                <label for="password">סיסמה:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="button secondary">כניסה</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

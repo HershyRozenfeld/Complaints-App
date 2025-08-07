@@ -1,0 +1,28 @@
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שליחת תלונה אנונימית</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>שליחת תלונה אנונימית</h1>
+        <form action="/submit" method="POST">
+            <label for="category">תחום התלונה:</label>
+            <select name="category" id="category" required>
+                <option value="" disabled selected>בחר תחום</option>
+                <option value="food">אוכל</option>
+                <option value="equipment">ציוד</option>
+                <option value="commands">פקודות</option>
+                <option value="other">אחר</option>
+            </select>
+
+            <label for="message">תוכן התלונה:</label>
+            <textarea name="message" id="message" rows="10" required></textarea>
+
+            <button type="submit" class="button primary">שלח תלונה</button>
+        </form>
+    </div>
+</body>
+</html>
